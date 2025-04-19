@@ -43,7 +43,8 @@
                text-transform: uppercase; /* All caps */
                width: 90%; /* Nearly full window width */
                line-height: 1.2;
-               font-size: 20vw; /* Much larger, scales with window */
+               font-size: 20vw; /* Large, scales with window */
+               -webkit-text-stroke: 0.5px #888844; /* Very thin outline */
                padding: 0;
            }
            .text-overlay span {
@@ -52,6 +53,7 @@
            @media (max-width: 768px) {
                .text-overlay {
                    font-size: 15vw; /* Larger on mobile */
+                   -webkit-text-stroke: 0.3px #888844; /* Slightly thinner outline for mobile */
                }
            }
        </style>
