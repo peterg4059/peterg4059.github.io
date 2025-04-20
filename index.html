@@ -1,72 +1,72 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Standard Navy</title>
-       <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@700&display=swap" rel="stylesheet">
-       <style>
-           body, html {
-               margin: 0;
-               padding: 0;
-               height: 100%;
-               overflow: hidden;
-           }
-           .video-container {
-               position: relative;
-               width: 100%;
-               height: 100vh;
-               overflow: hidden;
-               background: url('https://raw.githubusercontent.com/peterg4059/peterg4059.github.io/main/standardnavy.jpeg') no-repeat center center/cover;
-           }
-           .video-container video {
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               width: 100vw;
-               height: 100vh;
-               transform: translate(-50%, -50%);
-               min-width: 100%;
-               min-height: 100%;
-               object-fit: cover;
-               pointer-events: none; /* Prevents clicking */
-           }
-           .text-overlay {
-               position: absolute;
-               top: 50%;
-               left: 50%;
-               transform: translate(-50%, -50%);
-               color: #fffae6;
-               font-family: 'Karantina', sans-serif;
-               font-weight: 700;
-               text-align: center;
-               text-transform: uppercase; /* All caps */
-               width: 90%; /* Nearly full window width */
-               line-height: 1.2;
-               font-size: 20vw; /* Large, scales with window */
-               -webkit-text-stroke: 1px #ffe066; /* Very thin outline */
-               padding: 0;
-           }
-           .text-overlay span {
-               display: block; /* Each word on a new line */
-           }
-           @media (max-width: 768px) {
-               .text-overlay {
-                   font-size: 15vw; /* Larger on mobile */
-                   -webkit-text-stroke: 0.3px #888844; /* Slightly thinner outline for mobile */
-               }
-           }
-       </style>
-   </head>
-   <body>
-       <div class="video-container">
-           <video autoplay muted loop playsinline>
-               <source src="https://raw.githubusercontent.com/peterg4059/peterg4059.github.io/main/StandardNavy.mp4" type="video/mp4">
-           </video>
-       </div>
-       <div class="text-overlay">
-           <span>STANDARD</span>
-           <span>NAVY</span>
-       </div>
-   </body>
-   </html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standard Navy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            background: url('https://raw.githubusercontent.com/peterg4059/peterg4059.github.io/main/standardnavy.jpeg') no-repeat center center/cover;
+        }
+        .video-container video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100vw;
+            height: 100vh;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            object-fit: cover;
+            pointer-events: none;
+        }
+        .text-overlay {
+            position: absolute;
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+            color: transparent; /* Makes text fill invisible */
+            -webkit-text-stroke: 5px #5b584d; /* Thin outline only */
+            font-family: 'Karantina', sans-serif;
+            font-weight: 700;
+            text-align: center;
+            text-transform: uppercase;
+            width: 90%;
+            line-height: 1.2;
+            font-size: 20vw;
+            padding: 0;
+        }
+        .text-overlay span {
+            display: block;
+        }
+        @media (max-width: 768px) {
+            .text-overlay {
+                font-size: 15vw;
+                -webkit-text-stroke: 0.3px #888844;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <video autoplay muted loop playsinline>
+            <source src="https://raw.githubusercontent.com/peterg4059/peterg4059.github.io/main/StandardNavy.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="text-overlay">
+        <span>STANDARD</span>
+        <span>NAVY</span>
+    </div>
+</body>
+</html>
